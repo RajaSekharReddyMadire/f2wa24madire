@@ -1,11 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-var times=0
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  var max=360
+  var max=100
   var x
   console.log(req.query.x)
   if(req.query.x!=undefined)
